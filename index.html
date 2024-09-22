@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayesha - EdTech</title>
+    <!-- font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwind css link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- variable css -->
+    <link rel="stylesheet" href="assets/css/variable.css">  
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/style.css">  
+    <!-- responsive css  -->
+     <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body class=" bg-black">
+    <!-- start header section  -->
+    <header class="header-section absolute w-full">
+        <div class="container mx-auto">
+            <div class="header-wrap relative z-[999] flex flex-col lg:flex-row lg:gap-x-20 py-5 items-center">
+                <div class="logo flex items-center justify-between w-full lg:w-auto">
+                    <a href="index.html"><img src="assets/img/Logo.png" alt=""></a>
+                    <i class="fa-solid fa-bars-staggered text-white menu-btn cursor-pointer hover:text-[--primaryColor] duration-300" id="menu-btn"></i>
+                    <i class="fa-solid fa-xmark text-white close-btn cursor-pointer hover:text-[--primaryColor] duration-300" id="close-btn"></i>
+                </div>
+                <div class="menus flex flex-col lg:flex-row lg:items-center lg:justify-between w-dvw lg:w-full absolute lg:relative  top-12 lg:top-0 bg-white lg:bg-transparent text-center">
+                    <div class="common-btn order-2 lg:order-1 pt-4 pb-5 lg:py-0" id="common-btn">
+                        <a href="#" class="lg:text-white text-black text-base font-medium py-1 px-4 inline-block capitalize border border-black lg:border-[--borderColor] rounded-lg hover:border-[--primaryColor] hover:bg-[--primaryColor] hover:text-white duration-300 text-center"><i class="fa-solid fa-bars pe-2"></i>Услуги</a>
+                    </div>
+                    <nav class="main-menu order-1 lg:order-2 pt-5 lg:pt-0" id="main-menu">
+                        <ul>
+                            <li class="block lg:inline-block px-4 py-1"><a href="#" class="lg:text-white text-black text-base font-medium block capitalize hover:text-[--primaryColor] duration-300">Работы</a></li>
+                            <li class="block lg:inline-block px-4 py-1"><a href="#" class="lg:text-white text-black text-base font-medium block capitalize hover:text-[--primaryColor] duration-300">Окомпании</a></li>
+                            <li class="block lg:inline-block px-4 py-1"><a href="#" class="lg:text-white text-black text-base font-medium block capitalize hover:text-[--primaryColor] duration-300">Акции</a></li>
+                            <li class="block lg:inline-block px-4 lg:ps-4 py-1"><a href="#" class="lg:text-white text-black text-base font-medium block capitalize hover:text-[--primaryColor] duration-300">+7 495 207-75-70</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header section  -->
+
+    <!-- start hero section  -->
+    <section class="hero-section relative rounded-2xl">
+        <div class="container mx-auto flex items-center h-full">
+            <div class="hero-wrap relative w-full lg:w-1/2">
+                <h1 class="text-white text-[40px] leading-[5 0px] md:text-[64px] md:leading-[70px] mb-5">Премиальное обслуживание вашего автомобиля</h1>
+                <div>
+                    <a href="#" class="text-white text-base font-medium py-2 px-6 inline-block capitalize border border-[--borderColor] rounded-lg hover:border-[--primaryColor] hover:bg-[--primaryColor] duration-300 text-center me-4 mb-2">Запись в сервис<i class="fa-solid fa-chevron-right ps-2"></i></a>
+                    <a href="#" class="text-white text-base font-medium py-2 px-6 inline-block capitalize border border-[--borderColor] rounded-lg hover:border-[--primaryColor] hover:bg-[--primaryColor] duration-300 text-center mb-2"><i class="fa-regular fa-comment pe-2"></i>Консультация</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end hero section -->
+
+    <!-- start service section  -->
+    <section class="service-section relative clear-both bg-black my-10">
+        <div class="container mx-auto">
+            <div class="service-wrap grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5">
+                <div class="single-service bg-[--blackishColor] hover:bg-[--primaryColor] pt-6 pb-3 ps-6 rounded-2xl relative duration-300">
+                    <div class="single-service-content group">
+                        <div class="service-content flex items-center justify-between">
+                            <h2 class="text-2xl text-white font-medium">Обклейка авто пленкой</h2>
+                            <a href="#" class="text-white text-xs font-bold py-1 px-3 inline-block capitalize rounded-2xl bg-[--primaryColor] group-hover:bg-black duration-300 text-center me-5">АКЦИЯ</a>
+                        </div>
+                        <p class="absolute bottom-10 text-2xl text-white font-medium">от 32 000 ₽</p>
+                        <img src="assets/img/service1.png" alt="" class="block ms-auto">
+                    </div>
+                </div>
+                <div class="single-service bg-[--blackishColor] hover:bg-[--primaryColor] pt-6 pb-3 ps-6 rounded-2xl relative duration-300">
+                    <div class="single-service-content group">
+                        <div class="service-content flex items-center justify-between">
+                            <h2 class="text-2xl text-white font-medium">Обклейка авто пленкой</h2>
+                            <a href="#" class="text-white text-xs font-bold py-1 px-3 inline-block capitalize rounded-2xl bg-[--primaryColor] group-hover:bg-black duration-300 text-center me-5">АКЦИЯ</a>
+                        </div>
+                        <p class="absolute bottom-10 text-2xl text-white font-medium">от 32 000 ₽</p>
+                        <img src="assets/img/service2.png" alt="" class="block ms-auto">
+                    </div>
+                </div>
+                <div class="single-service bg-[--blackishColor] hover:bg-[--primaryColor] pt-6 pb-3 ps-6 rounded-2xl relative duration-300">
+                    <div class="single-service-content group">
+                        <div class="service-content flex items-center justify-between">
+                            <h2 class="text-2xl text-white font-medium">Обклейка авто пленкой</h2>
+                            <a href="#" class="text-white text-xs font-bold py-1 px-3 inline-block capitalize rounded-2xl bg-[--primaryColor] group-hover:bg-black duration-300 text-center me-5">АКЦИЯ</a>
+                        </div>
+                        <p class="absolute bottom-10 text-2xl text-white font-medium">от 32 000 ₽</p>
+                        <img src="assets/img/service3.png" alt="" class="block ms-auto">
+                    </div>
+                </div>
+                <div class="single-service bg-[--blackishColor] hover:bg-[--primaryColor] pt-6 pb-3 ps-6 rounded-2xl relative duration-300">
+                    <div class="single-service-content group">
+                        <div class="service-content flex items-center justify-between">
+                            <h2 class="text-2xl text-white font-medium">Обклейка авто пленкой</h2>
+                            <a href="#" class="text-white text-xs font-bold py-1 px-3 inline-block capitalize rounded-2xl bg-[--primaryColor] group-hover:bg-black duration-300 text-center me-5">АКЦИЯ</a>
+                        </div>
+                        <p class="absolute bottom-10 text-2xl text-white font-medium">от 32 000 ₽</p>
+                        <img src="assets/img/service4.png" alt="" class="block ms-auto">
+                    </div>
+                </div>
+                <div class="single-service bg-[--blackishColor] hover:bg-[--primaryColor] pt-6 pb-3 ps-6 rounded-2xl relative duration-300">
+                    <div class="single-service-content group">
+                        <div class="service-content flex items-center justify-between">
+                            <h2 class="text-2xl text-white font-medium">Обклейка авто пленкой</h2>
+                            <a href="#" class="text-white text-xs font-bold py-1 px-3 inline-block capitalize rounded-2xl bg-[--primaryColor] group-hover:bg-black duration-300 text-center me-5">АКЦИЯ</a>
+                        </div>
+                        <p class="absolute bottom-10 text-2xl text-white font-medium">от 32 000 ₽</p>
+                        <img src="assets/img/service5.png" alt="" class="block ms-auto">
+                    </div>
+                </div>
+                <div class="single-service bg-[--blackishColor] hover:bg-[--primaryColor] pt-6 pb-3 ps-6 rounded-2xl relative duration-300">
+                    <div class="single-service-content group">
+                        <div class="service-content flex items-center justify-between">
+                            <h2 class="text-2xl text-white font-medium">Обклейка авто пленкой</h2>
+                            <a href="#" class="text-white text-xs font-bold py-1 px-3 inline-block capitalize rounded-2xl bg-[--primaryColor] group-hover:bg-black duration-300 text-center me-5">АКЦИЯ</a>
+                        </div>
+                        <p class="absolute bottom-10 text-2xl text-white font-medium">от 32 000 ₽</p>
+                        <img src="assets/img/service6.png" alt="" class="block ms-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end service section -->
+
+    <!-- start works section  -->
+    <section class="works-section bg-white py-10 rounded-2xl">
+        <div class="container mx-auto">
+            <div class="works-wrap">
+                <div class="title flex justify-between items-center">
+                    <h2 class="text-[#282828] font-semibold text-[56px] leading-[62px] pb-5">Избранные работы</h2>
+                    <div class="control-btn">
+                        <i class="fa-solid fa-chevron-left text-[#5C5C5C] py-2 px-3 rounded-lg hover:bg-[--primaryColor] duration-300 hover:text-white"></i>
+                        <i class="fa-solid fa-chevron-right text-[#5C5C5C] py-2 px-3 rounded-lg hover:bg-[--primaryColor] duration-300 hover:text-white"></i>
+                    </div>
+                </div>
+                <div class="works grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-5 gap-y-8">
+                    <div class="single-work hover:shadow-xl duration-300  rounded-2xl">
+                        <img src="assets/img/work1.png" alt="" class="w-full">
+                        <div class="p-3 pb-6">
+                            <h3 class="text-lg font-medium text-[#282828] pb-2">Техническое обслуживание Chevrolet Camaro</h3>
+                            <a href="#" class="flex justify-between items-center  text-[#282828] hover:text-[--primaryColor] duration-300 text-sm "><span>Подробнее об услуге</span> <i class="fa-solid fa-chevron-right ps-2"></i></a>
+                        </div>
+                    </div>
+                    <div class="single-work hover:shadow-xl duration-300  rounded-2xl">
+                        <img src="assets/img/work2.png" alt="" class="w-full">
+                        <div class="p-3 pb-6">
+                            <h3 class="text-lg font-medium text-[#282828] pb-2">Техническое обслуживание Chevrolet Camaro</h3>
+                            <a href="#" class="flex justify-between items-center  text-[#282828] hover:text-[--primaryColor] duration-300 text-sm "><span>Подробнее об услуге</span> <i class="fa-solid fa-chevron-right ps-2"></i></a>
+                        </div>
+                    </div>
+                    <div class="single-work hover:shadow-xl duration-300  rounded-2xl">
+                        <img src="assets/img/work3.png" alt="" class="w-full">
+                        <div class="p-3 pb-6">
+                            <h3 class="text-lg font-medium text-[#282828] pb-2">Техническое обслуживание Chevrolet Camaro</h3>
+                            <a href="#" class="flex justify-between items-center  text-[#282828] hover:text-[--primaryColor] duration-300 text-sm "><span>Подробнее об услуге</span> <i class="fa-solid fa-chevron-right ps-2"></i></a>
+                        </div>
+                    </div>
+                    <div class="single-work hover:shadow-xl duration-300  rounded-2xl">
+                        <img src="assets/img/work4.png" alt="" class="w-full">
+                        <div class="p-3 pb-6">
+                            <h3 class="text-lg font-medium text-[#282828] pb-2">Техническое обслуживание Chevrolet Camaro</h3>
+                            <a href="#" class="flex justify-between items-center  text-[#282828] hover:text-[--primaryColor] duration-300 text-sm "><span>Подробнее об услуге</span> <i class="fa-solid fa-chevron-right ps-2"></i></a>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="social-media-wrap flex flex-col sm:flex-row justify-between items-center bg-[#F5F5F5] p-6 rounded-xl gap-x-20 gap-y-5 my-10">
+                    <h3 class="w-full md:w-1/4">Присоединяйтесь к намв социальных сетях:</h3>
+                    <nav class="w-full md:w-3/4">
+                        <ul class="flex flex-nowrap justify-between items-center gap-x-2 gap-y-4">
+                            <li class="bg-white py-2 px-2 lg:px-10 rounded-xl">
+                                <a href="" class="flex justify-between items-center gap-x-1 group">
+                                    <img src="assets/img/uk.png" alt="" class="grayscale group-hover:grayscale-0 duration-300">
+                                    <span class="hidden lg:block">ВКонтакте</span>
+                                </a>
+                            </li>
+                            <li class="bg-white py-2 px-2 lg:px-10 rounded-xl">
+                                <a href="" class="flex justify-between items-center gap-x-1 group">
+                                    <img src="assets/img/instagram.png" alt="" class="grayscale group-hover:grayscale-0 duration-300">
+                                    <span class="hidden lg:block">ВКонтакте</span>
+                                </a>
+                            </li>
+                            <li class="bg-white py-2 px-2 lg:px-10 rounded-xl">
+                                <a href="" class="flex justify-between items-center gap-x-1 group">
+                                    <img src="assets/img/youtube.png" alt="" class="grayscale group-hover:grayscale-0 duration-300">
+                                    <span class="hidden lg:block">ВКонтакте</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end works section -->
+
+    <!-- start footer section  -->
+    <footer class="footer-section bg-[--primaryColor] rounded-2xl mt-5 py-6">
+        <div class="container mx-auto">
+            <div class="footer-wrap flex flex-col lg:flex-row gap-10">
+                <div class="footer-content">
+                    <h2 class="text-white font-semibold text-[56px] leading-[62px]">Почему UCT?</h2>
+                    <p class="text-white text-2xl pt-3 lg:pb-20 pb-10">UCT — это гарантия не только качества,но и стиля! Доверь свой автомобиль профессионалам!</p>
+                    <div>
+                        <a href="#" class="text-white text-base font-medium py-2 px-6 inline-block capitalize border border-white rounded-lg hover:bg-white hover:text-black duration-300 text-center me-4 mb-2">Запись в сервис</a>
+                        <a href="#" class="text-white text-base font-medium py-2 px-6 inline-block capitalize border border-white rounded-lg hover:bg-white hover:text-black duration-300 text-center mb-2">Консультация</a>
+                    </div>
+                </div>
+                <div class="footer-menus grid grid-cols-1 sm:grid-cols-2 gap-10">
+                    <div class="single-footer-menu">
+                        <i class="fa-solid fa-car text-white block text-[56px]"></i>
+                        <h4 class="text-white text-lg py-3">ОБОРУДОВАНИЕ</h4>
+                        <p class="text-white text-base">Автомойка на 2 поста и лучшее итальянское оборудование</p>
+                    </div>
+                    <div class="single-footer-menu">
+                        <i class="fa-solid fa-car text-white block text-[56px]"></i>
+                        <h4 class="text-white text-lg py-3">ОБОРУДОВАНИЕ</h4>
+                        <p class="text-white text-base">Автомойка на 2 поста и лучшее итальянское оборудование</p>
+                    </div>
+                    <div class="single-footer-menu">
+                        <i class="fa-solid fa-car text-white block text-[56px]"></i>
+                        <h4 class="text-white text-lg py-3">ОБОРУДОВАНИЕ</h4>
+                        <p class="text-white text-base">Автомойка на 2 поста и лучшее итальянское оборудование</p>
+                    </div>
+                    <div class="single-footer-menu">
+                        <i class="fa-solid fa-car text-white block text-[56px]"></i>
+                        <h4 class="text-white text-lg py-3">ОБОРУДОВАНИЕ</h4>
+                        <p class="text-white text-base">Автомойка на 2 поста и лучшее итальянское оборудование</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer section -->
+
+   <script src="assets/js/app.js"></script>
+</body>
+</html>
