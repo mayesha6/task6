@@ -15,3 +15,22 @@
     mainMenu.classList.remove("block");
     menuBtn.classList.remove("hidden");
  })
+
+let slide = new Swiper('.slide', {
+   slidesPerView: 1,
+   loop: true,
+   navigation: {
+     nextEl: '.swiper-button-next',
+     prevEl: '.swiper-button-prev',
+   },
+   breakpoints: {
+      768: {
+        slidesPerView: 2, // 3 slides per view for screens >= 768px
+        spaceBetween: 30, // 30px space between slides
+      },
+      1024: {
+        slidesPerView: 3, // 4 slides per view for screens >= 1024px
+        spaceBetween: 40, // 40px space between slides
+      },
+    },
+ });

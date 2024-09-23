@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="assets/css/style.css">  
     <!-- responsive css  -->
      <link rel="stylesheet" href="assets/css/responsive.css">
+     <!-- swiper slide  -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ 
 </head>
 <body class=" bg-black">
     <!-- start header section  -->
@@ -136,42 +140,46 @@
         <div class="container mx-auto">
             <div class="works-wrap">
                 <div class="title flex justify-between items-center">
-                    <h2 class="text-[#282828] font-semibold text-[56px] leading-[62px] pb-5">Избранные работы</h2>
-                    <div class="control-btn">
-                        <i class="fa-solid fa-chevron-left text-[#5C5C5C] py-2 px-3 rounded-lg hover:bg-[--primaryColor] duration-300 hover:text-white"></i>
-                        <i class="fa-solid fa-chevron-right text-[#5C5C5C] py-2 px-3 rounded-lg hover:bg-[--primaryColor] duration-300 hover:text-white"></i>
+                    <h2 class="text-[#282828] font-semibold text-[46px] leading-[52px] lg:text-[56px] lg:leading-[62px] pb-5">Избранные работы</h2>
+                    <div class="control-btn flex gap-10">
+                        <!-- <i class="fa-solid fa-chevron-left swiper-button-prev text-[#5C5C5C] py-2 px-3 rounded-lg hover:bg-[--primaryColor] duration-300 hover:text-white"></i>
+                        <i class="fa-solid fa-chevron-right swiper-button-next text-[#5C5C5C] py-2 px-3 rounded-lg hover:bg-[--primaryColor] duration-300 hover:text-white"></i> -->
+                        <div class="swiper-button-prev relative text-[#5C5C5C] py-2 px-3 rounded-lg hover:bg-[--primaryColor] duration-300 hover:text-white w-auto h-auto mt-0"></div>
+                        <div class="swiper-button-next relative text-[#5C5C5C] py-2 px-3 rounded-lg hover:bg-[--primaryColor] duration-300 hover:text-white w-auto h-auto mt-0"></div>
                     </div>
                 </div>
-                <div class="works grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-5 gap-y-8">
-                    <div class="single-work hover:shadow-xl duration-300  rounded-2xl">
-                        <img src="assets/img/work1.png" alt="" class="w-full">
-                        <div class="p-3 pb-6">
-                            <h3 class="text-lg font-medium text-[#282828] pb-2">Техническое обслуживание Chevrolet Camaro</h3>
-                            <a href="#" class="flex justify-between items-center  text-[#282828] hover:text-[--primaryColor] duration-300 text-sm "><span>Подробнее об услуге</span> <i class="fa-solid fa-chevron-right ps-2"></i></a>
+                <div class="slide">
+                    <div class="works swiper-wrapper flex gap-2 lg:gap-10">
+                        <div class="single-work swiper-slide hover:shadow-xl duration-300  rounded-2xl">
+                            <img src="assets/img/work1.png" alt="" class="w-full">
+                            <div class="p-3 pb-6">
+                                <h3 class="text-lg font-medium text-[#282828] pb-2">Техническое обслуживание Chevrolet Camaro</h3>
+                                <a href="#" class="flex justify-between items-center  text-[#282828] hover:text-[--primaryColor] duration-300 text-sm "><span>Подробнее об услуге</span> <i class="fa-solid fa-chevron-right ps-2"></i></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="single-work hover:shadow-xl duration-300  rounded-2xl">
-                        <img src="assets/img/work2.png" alt="" class="w-full">
-                        <div class="p-3 pb-6">
-                            <h3 class="text-lg font-medium text-[#282828] pb-2">Техническое обслуживание Chevrolet Camaro</h3>
-                            <a href="#" class="flex justify-between items-center  text-[#282828] hover:text-[--primaryColor] duration-300 text-sm "><span>Подробнее об услуге</span> <i class="fa-solid fa-chevron-right ps-2"></i></a>
+                        <div class="single-work swiper-slide hover:shadow-xl duration-300  rounded-2xl">
+                            <img src="assets/img/work2.png" alt="" class="w-full">
+                            <div class="p-3 pb-6">
+                                <h3 class="text-lg font-medium text-[#282828] pb-2">Техническое обслуживание Chevrolet Camaro</h3>
+                                <a href="#" class="flex justify-between items-center  text-[#282828] hover:text-[--primaryColor] duration-300 text-sm "><span>Подробнее об услуге</span> <i class="fa-solid fa-chevron-right ps-2"></i></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="single-work hover:shadow-xl duration-300  rounded-2xl">
-                        <img src="assets/img/work3.png" alt="" class="w-full">
-                        <div class="p-3 pb-6">
-                            <h3 class="text-lg font-medium text-[#282828] pb-2">Техническое обслуживание Chevrolet Camaro</h3>
-                            <a href="#" class="flex justify-between items-center  text-[#282828] hover:text-[--primaryColor] duration-300 text-sm "><span>Подробнее об услуге</span> <i class="fa-solid fa-chevron-right ps-2"></i></a>
+                        <div class="single-work swiper-slide hover:shadow-xl duration-300  rounded-2xl">
+                            <img src="assets/img/work3.png" alt="" class="w-full">
+                            <div class="p-3 pb-6">
+                                <h3 class="text-lg font-medium text-[#282828] pb-2">Техническое обслуживание Chevrolet Camaro</h3>
+                                <a href="#" class="flex justify-between items-center  text-[#282828] hover:text-[--primaryColor] duration-300 text-sm "><span>Подробнее об услуге</span> <i class="fa-solid fa-chevron-right ps-2"></i></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="single-work hover:shadow-xl duration-300  rounded-2xl">
-                        <img src="assets/img/work4.png" alt="" class="w-full">
-                        <div class="p-3 pb-6">
-                            <h3 class="text-lg font-medium text-[#282828] pb-2">Техническое обслуживание Chevrolet Camaro</h3>
-                            <a href="#" class="flex justify-between items-center  text-[#282828] hover:text-[--primaryColor] duration-300 text-sm "><span>Подробнее об услуге</span> <i class="fa-solid fa-chevron-right ps-2"></i></a>
+                        <div class="single-work swiper-slide hover:shadow-xl duration-300  rounded-2xl">
+                            <img src="assets/img/work4.png" alt="" class="w-full">
+                            <div class="p-3 pb-6">
+                                <h3 class="text-lg font-medium text-[#282828] pb-2">Техническое обслуживание Chevrolet Camaro</h3>
+                                <a href="#" class="flex justify-between items-center  text-[#282828] hover:text-[--primaryColor] duration-300 text-sm "><span>Подробнее об услуге</span> <i class="fa-solid fa-chevron-right ps-2"></i></a>
+                            </div>
                         </div>
+                       
                     </div>
-                   
                 </div>
                 <div class="social-media-wrap flex flex-col sm:flex-row justify-between items-center bg-[#F5F5F5] p-6 rounded-xl gap-x-20 gap-y-5 my-10">
                     <h3 class="w-full md:w-1/4">Присоединяйтесь к намв социальных сетях:</h3>
